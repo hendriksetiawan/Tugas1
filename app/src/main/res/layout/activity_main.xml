@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.blogspot.hdtechnology_studio.tugas1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tugas1"
+        android:text="Tugas 1"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_below="@id/tv_tugas1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama"
+        android:text="Nama :"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_below="@id/tv_nama"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_kelas"
+        android:text="Kelas :"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_nama"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:id="@+id/edt_nama"/>
+    <EditText
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_kelas"
+        android:layout_below="@id/tv_nama"
+        android:ems="10"
+        android:layout_marginTop="4dp"
+        android:id="@+id/edt_kelas"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@+id/edt_kelas"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
